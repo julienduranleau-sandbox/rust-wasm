@@ -1,6 +1,6 @@
-const js = import("../../hello-wasm/pkg/hello_wasm.js")
+const rustPromise = import("../../hello-wasm/pkg/hello_wasm.js")
 
-js.then(js => {
-  js.greet("WebAssembly")
+rustPromise.then(rust => {
+  rust.greet("WebAssembly")
 })
 
